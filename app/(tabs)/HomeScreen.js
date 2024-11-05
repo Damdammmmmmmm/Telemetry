@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable, StatusBar, Image } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
-import HeaderTab from 'C:/Users/Denver/Desktop/Telemetry/components/HeaderTab.js'; // Adjust the path as necessary
+import HeaderTab from 'C:/Users/user/Desktop/Telemetry_app/components/HeaderTab.js'; // Adjust the path as necessary
 
 export default function HomeScreen({ navigation }) {
   const handlePress = (section) => {
@@ -75,7 +75,7 @@ export default function HomeScreen({ navigation }) {
       {/* Local Image Section */}
       <View style={styles.imageContainer}>
         <Image
-          source={require('C:/Users/Denver/Desktop/Telemetry/assets/images/Logo.png')} // Update the path to your image
+          source={require('C:/Users/user/Desktop/Telemetry_app/assets/images/Logo.png')} // Update the path to your image
           style={styles.image}
           resizeMode="contain"
         />

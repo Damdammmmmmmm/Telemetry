@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import * as Location from 'expo-location'; // Make sure this import is correct
 
 const ExploreScreen = () => {
   const [userLocation, setUserLocation] = useState(null);
   const [dataLoggerLocations, setDataLoggerLocations] = useState([
-    { id: '1', latitude: 14.688445, longitude: 120.957051, title: 'Data Logger 1', description: 'Monitoring pressure' },
-    { id: '2', latitude: 14.714729, longitude: 120.973008, title: 'Data Logger 2', description: 'Monitoring temperature' },
-    { id: '3', latitude: 14.706994, longitude: 120.960775, title: 'Data Logger 3', description: 'Monitoring humidity' },
+    { id: '1', latitude: 14.688445, longitude: 120.957051, title: 'Data Logger 1', description: 'Status: Good' },
+    { id: '2', latitude: 14.714729, longitude: 120.973008, title: 'Data Logger 2', description: 'Status: Good' },
+    { id: '3', latitude: 14.706994, longitude: 120.960775, title: 'Data Logger 3', description: 'Status: Faulty' },
     // Add more data logger locations here
   ]);
 
@@ -46,8 +46,10 @@ const ExploreScreen = () => {
           coordinate={{ latitude: logger.latitude, longitude: logger.longitude }}
           title={logger.title}
           description={logger.description}
-          image={require('C:/Users/Denver/Desktop/Telemetry/assets/images/LoggerIcon.png')} // Use your custom icon for data loggers
-        />
+          image={require('C:/Users/user/Desktop/Telemetry_app/assets/images/LoggerIcon.png')} // Use your custom icon for data loggers
+          style={{ width: 40, height: 40 }} // Resize the icon here
+        >
+        </Marker>
       ))}
     </MapView>
   );

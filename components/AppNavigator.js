@@ -1,9 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from 'C:/Users/Denver/Desktop/Telemetry/app/(tabs)/HomeScreen';
-import Logger1 from 'C:/Users/Denver/Desktop/Telemetry/components/Logger1';
-import Logger2 from 'C:/Users/Denver/Desktop/Telemetry/components/Logger2';
-import Logger3 from 'C:/Users/Denver/Desktop/Telemetry/components/Logger3';
+import HomeScreen from 'C:/Users/user/Desktop/Telemetry_app/app/(tabs)/HomeScreen.js';
+import Logger1 from 'C:/Users/user/Desktop/Telemetry_app/components/Logger1.js';
+import Logger2 from 'C:/Users/user/Desktop/Telemetry_app/components/Logger2.js';
+import Logger3 from 'C:/Users/user/Desktop/Telemetry_app/components/Logger3.js';
 // Import other screens/components as needed
 
 const Stack = createNativeStackNavigator();
